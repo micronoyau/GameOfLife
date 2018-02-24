@@ -5,8 +5,8 @@ from time import sleep
 from os import system
 from random import random
 
-width = 30
-height = 30
+width = 60
+height = 39
 speed = 0.01
 
 colony = tuple( tuple( (1 if random() < 0.5 else 0) for _ in range(width) ) for _ in range(height) )
@@ -14,12 +14,12 @@ colony = tuple( tuple( (1 if random() < 0.5 else 0) for _ in range(width) ) for 
 g = Grid( (width,height), colony )
 
 try:
-	while True:
-		system('clear')
-		print "GENERATION {}".format(g.generation)
-		print g
-		sleep(speed)
-		g.evolve()
+    while True:
+        system('clear')
+        print "GENERATION {}".format(g.generation)
+        print g
+        sleep(speed)
+        g.evolve()
 
 except KeyboardInterrupt:
-	print "\nClosed"
+    print "\nClosed"
