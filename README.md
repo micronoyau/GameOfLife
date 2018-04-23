@@ -1,2 +1,2 @@
 # GameOfLife
-A short shell version of Conway's game of life.
+Conway's game of life in C and Python, in shell and graphical versions (SDL v1.2).
